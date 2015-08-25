@@ -6,17 +6,12 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_rightmotor" id="65" inline="true">
-        <value name="MOVRIGHT">
-          <block type="math_number" id="73">
-            <field name="NUM">90</field>
-          </block>
-        </value>
+      <block type="movement_right" id="83">
         <next>
           <block type="robot_delay" id="44" inline="true">
             <value name="DELAY">
               <block type="math_number" id="45">
-                <field name="NUM">5000</field>
+                <field name="NUM">2000</field>
               </block>
             </value>
             <next>
