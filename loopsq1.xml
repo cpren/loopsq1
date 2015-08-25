@@ -1,5 +1,71 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="comment_comment" id="145" x="-978" y="-913">
     <field name="TEXT">I'm on my way!</field>
+    <next>
+      <block type="led_select" id="236" inline="true">
+        <field name="ACTION">FLASH</field>
+        <value name="LED">
+          <block type="sensor_light" id="243">
+            <field name="LIGHT">LEFT</field>
+          </block>
+        </value>
+        <next>
+          <block type="robot_delay" id="251" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="265">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+            <next>
+              <block type="led_select" id="244" inline="true">
+                <field name="ACTION">FLASH</field>
+                <value name="LED">
+                  <block type="sensor_light" id="245">
+                    <field name="LIGHT">RIGHT</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="robot_delay" id="266" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="267">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="led_select" id="246" inline="true">
+                        <field name="ACTION">FLASH</field>
+                        <value name="LED">
+                          <block type="sensor_light" id="247">
+                            <field name="LIGHT">REAR</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="robot_delay" id="268" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="269">
+                                <field name="NUM">1000</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="movement_forward" id="279">
+                                <next>
+                                  <block type="comment_comment" id="281">
+                                    <field name="TEXT"></field>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
   </block>
 </xml>
