@@ -11,7 +11,7 @@
         </value>
         <next>
           <block type="oled_color" id="290">
-            <field name="OBJECT">GREEN</field>
+            <field name="OBJECT">BLACK</field>
             <next>
               <block type="robot_delay" id="251" inline="true">
                 <value name="DELAY">
@@ -29,7 +29,7 @@
                     </value>
                     <next>
                       <block type="oled_color" id="291">
-                        <field name="OBJECT">GREEN</field>
+                        <field name="OBJECT">BLACK</field>
                         <next>
                           <block type="robot_delay" id="266" inline="true">
                             <value name="DELAY">
@@ -47,7 +47,7 @@
                                 </value>
                                 <next>
                                   <block type="oled_color" id="292">
-                                    <field name="OBJECT">GREEN</field>
+                                    <field name="OBJECT">BLACK</field>
                                     <next>
                                       <block type="robot_delay" id="268" inline="true">
                                         <value name="DELAY">
@@ -59,7 +59,7 @@
                                           <block type="movement_forward" id="279">
                                             <next>
                                               <block type="comment_comment" id="281">
-                                                <field name="TEXT"></field>
+                                                <field name="TEXT">I'm here to help.</field>
                                               </block>
                                             </next>
                                           </block>
